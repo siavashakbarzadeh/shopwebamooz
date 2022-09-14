@@ -1,0 +1,33 @@
+{
+    "name": "jokoli/common",
+    "version": "1.0.0",
+    "description": "Module Common For Learning Management System",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ali keshtkar",
+            "email": "alikeshtkar262@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jokoli\\Common\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jokoli\\Common\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jokoli\\Common\\Providers\\CommonServiceProvider",
+                "Jokoli\\Common\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}

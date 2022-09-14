@@ -1,0 +1,30 @@
+{
+    "name": "jokoli/category",
+    "version": "1.0.0",
+    "description": "Module Category For Learning Management System",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ali keshtkar",
+            "email": "alikeshtkar262@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jokoli\\Category\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jokoli\\Category\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jokoli\\Category\\Providers\\CategoryServiceProvider",
+                "Jokoli\\Category\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}

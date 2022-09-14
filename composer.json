@@ -1,0 +1,115 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-bcmath": "*",
+        "bensampo/laravel-enum": "^4.1",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "haruncpi/laravel-id-generator": "^1.1",
+        "hekmatinasser/verta": "^1.12",
+        "intervention/image": "^2.7",
+        "jokoli/category": "^1.0",
+        "jokoli/common": "^1.0",
+        "jokoli/course": "^1.0",
+        "jokoli/dashboard": "^1.0",
+        "jokoli/discount": "^1.0",
+        "jokoli/front": "^1.0",
+        "jokoli/media": "^1.0",
+        "jokoli/payment": "^1.0",
+        "jokoli/permission": "^1.0",
+        "jokoli/ticket": "^1.0",
+        "jokoli/user": "^1.0",
+        "laravel/framework": "^8.75",
+        "laravel/helpers": "^1.5",
+        "laravel/sanctum": "^2.11",
+        "laravel/tinker": "^2.5",
+        "laravel/ui": "^3.4",
+        "spatie/laravel-permission": "^5.5",
+        "staudenmeir/eloquent-has-many-deep": "*",
+        "ybazli/faker": "^1.0"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./modules/**/**"
+        }
+    ],
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.12",
+        "facade/ignition": "^2.5",
+        "fakerphp/faker": "^1.9.1",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^5.10",
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Jokoli\\User\\": "modules/Jokoli/User/src/",
+            "Jokoli\\Front\\": "modules/Jokoli/Front/src/",
+            "Jokoli\\Payment\\": "modules/Jokoli/Payment/src/",
+            "Jokoli\\Course\\": "modules/Jokoli/Course/src/",
+            "Jokoli\\Ticket\\": "modules/Jokoli/Ticket/src/",
+            "Jokoli\\Media\\": "modules/Jokoli/Media/src/",
+            "Jokoli\\Dashboard\\": "modules/Jokoli/Dashboard/src/",
+            "Jokoli\\Category\\": "modules/Jokoli/Category/src/",
+            "Jokoli\\Discount\\": "modules/Jokoli/Discount/src/",
+            "Jokoli\\Permission\\": "modules/Jokoli/Permission/src/",
+            "Jokoli\\Common\\": "modules/Jokoli/Common/src/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "Jokoli\\User\\Tests\\": "modules/Jokoli/User/tests/",
+            "Jokoli\\Front\\Tests\\": "modules/Jokoli/Front/tests/",
+            "Jokoli\\Payment\\Tests\\": "modules/Jokoli/Payment/tests/",
+            "Jokoli\\Course\\Tests\\": "modules/Jokoli/Course/tests/",
+            "Jokoli\\Ticket\\Tests\\": "modules/Jokoli/Ticket/tests/",
+            "Jokoli\\Media\\Tests\\": "modules/Jokoli/Media/tests/",
+            "Jokoli\\Dashboard\\Tests\\": "modules/Jokoli/Dashboard/tests/",
+            "Jokoli\\Category\\Tests\\": "modules/Jokoli/Category/tests/",
+            "Jokoli\\Discount\\Tests\\": "modules/Jokoli/Discount/tests/",
+            "Jokoli\\Permission\\Tests\\": "modules/Jokoli/Permission/tests/",
+            "Jokoli\\Common\\Tests\\": "modules/Jokoli/Common/tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

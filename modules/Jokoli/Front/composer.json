@@ -1,0 +1,30 @@
+{
+    "name": "jokoli/front",
+    "version": "1.0.0",
+    "description": "Module Front For Learning Management System",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ali keshtkar",
+            "email": "alikeshtkar262@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jokoli\\Front\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jokoli\\Front\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jokoli\\Front\\Providers\\FrontServiceProvider",
+                "Jokoli\\Front\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}

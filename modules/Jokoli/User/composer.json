@@ -1,0 +1,30 @@
+{
+    "name": "jokoli/user",
+    "version": "1.0.0",
+    "description": "A Laravel Greeter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ali keshtkar",
+            "email": "alikeshtkar262@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jokoli\\User\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jokoli\\User\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jokoli\\User\\Providers\\UserServiceProvider",
+                "Jokoli\\User\\Providers\\UserRouteServiceProvider"
+            ]
+        }
+    }
+}

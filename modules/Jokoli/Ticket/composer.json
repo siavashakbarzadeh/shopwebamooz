@@ -1,0 +1,31 @@
+{
+    "name": "jokoli/ticket",
+    "version": "1.0.0",
+    "description": "Module Ticket For Learning Management System",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ali keshtkar",
+            "email": "alikeshtkar262@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jokoli\\Ticket\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jokoli\\Ticket\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jokoli\\Ticket\\Providers\\TicketServiceProvider",
+                "Jokoli\\Ticket\\Providers\\RouteServiceProvider",
+                "Jokoli\\Ticket\\Providers\\EventServiceProvider"
+            ]
+        }
+    }
+}

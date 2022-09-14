@@ -1,0 +1,30 @@
+{
+    "name": "jokoli/course",
+    "version": "1.0.0",
+    "description": "Module Course For Learning Management System",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ali keshtkar",
+            "email": "alikeshtkar262@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jokoli\\Course\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jokoli\\Course\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jokoli\\Course\\Providers\\CourseServiceProvider",
+                "Jokoli\\Course\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}

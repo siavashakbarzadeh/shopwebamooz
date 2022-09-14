@@ -1,0 +1,30 @@
+{
+    "name": "jokoli/dashboard",
+    "version": "1.0.0",
+    "description": "Module Dashboard For Learning Management System",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ali keshtkar",
+            "email": "alikeshtkar262@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jokoli\\Dashboard\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jokoli\\Dashboard\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jokoli\\Dashboard\\Providers\\DashboardServiceProvider",
+                "Jokoli\\Dashboard\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}

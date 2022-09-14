@@ -1,0 +1,31 @@
+{
+    "name": "jokoli/discount",
+    "version": "1.0.0",
+    "description": "Module Discount For Learning Management System",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ali keshtkar",
+            "email": "alikeshtkar262@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jokoli\\Discount\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jokoli\\Discount\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jokoli\\Discount\\Providers\\DiscountServiceProvider",
+                "Jokoli\\Discount\\Providers\\RouteServiceProvider",
+                "Jokoli\\Discount\\Providers\\EventServiceProvider"
+            ]
+        }
+    }
+}

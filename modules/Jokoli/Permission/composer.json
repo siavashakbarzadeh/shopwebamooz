@@ -1,0 +1,33 @@
+{
+    "name": "jokoli/permission",
+    "version": "1.0.0",
+    "description": "Module Permission For Learning Management System",
+    "license": "MIT",
+    "require": {
+        "spatie/laravel-permission": "^5.5"
+    },
+    "authors": [
+        {
+            "name": "ali keshtkar",
+            "email": "alikeshtkar262@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jokoli\\Permission\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jokoli\\Permission\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jokoli\\Permission\\Providers\\PermissionServiceProvider",
+                "Jokoli\\Permission\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}

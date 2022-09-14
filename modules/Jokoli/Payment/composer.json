@@ -1,0 +1,31 @@
+{
+    "name": "jokoli/payment",
+    "version": "1.0.0",
+    "description": "Module Payment For Learning Management System",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ali keshtkar",
+            "email": "alikeshtkar262@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jokoli\\Payment\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jokoli\\Payment\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jokoli\\Payment\\Providers\\PaymentServiceProvider",
+                "Jokoli\\Payment\\Providers\\EventServiceProvider",
+                "Jokoli\\Payment\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}

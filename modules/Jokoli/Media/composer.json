@@ -1,0 +1,33 @@
+{
+    "name": "jokoli/media",
+    "version": "1.0.0",
+    "description": "Module Media For Learning Management System",
+    "license": "MIT",
+    "require": {
+        "intervention/image": "^2.7"
+    },
+    "authors": [
+        {
+            "name": "ali keshtkar",
+            "email": "alikeshtkar262@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jokoli\\Media\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jokoli\\Media\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jokoli\\Media\\Providers\\MediaServiceProvider",
+                "Jokoli\\Media\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}
